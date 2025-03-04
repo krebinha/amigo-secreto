@@ -33,3 +33,9 @@ let amigoAleatorio = amigos[Math.floor(Math.random() * amigos.length)];
 let amigoSorteado = amigos[amigoAleatorio];
 let resultado = document.getElementById("resultado");
 
+//agora validar
+if (amigos.length === 0) {
+    alert("Por favor, adicione pelo menos 1 amigo antes de sortear");
+    return;
+}
+}
