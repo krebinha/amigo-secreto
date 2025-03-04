@@ -38,4 +38,6 @@ if (amigos.length === 0) {
     alert("Por favor, adicione pelo menos 1 amigo antes de sortear");
     return;
 }
+// limpa o resultado
+resultadoLista.innerHTML = `<li>O amigo sorteado é: ${amigoSorteado}</li>`;
 }
