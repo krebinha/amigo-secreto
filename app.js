@@ -19,4 +19,12 @@ atualizarLista();
 function atualizarLista() {
 let lista = document.getElementById("lista");
 lista.innerHTML = "";
+// cria um elemento li para cada amigo
+for (let i = 0; i < amigos.length; i++) {
+let lista = document.createElement("li"); // pagina doc https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+li.textContent = amigos[i];
+lista.appendChild(li);
+}
+}
+
 
