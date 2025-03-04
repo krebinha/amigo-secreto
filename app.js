@@ -5,6 +5,7 @@ let amigos = [];
 function adicionarAmigo() {
 let input = document.getElementById("amigo");    
 let nome = input.value.trim();
+// valida a funcao
 if (nome === "") {
     alert("Por Favor, insira um nome válido");
     return; 
@@ -14,4 +15,8 @@ amigos.push(nome);
 input.value = "";
 atualizarLista();
 }
+// atualiza a lista de amigos
+function atualizarLista() {
+let lista = document.getElementById("lista");
+lista.innerHTML = "";
 
