@@ -17,13 +17,15 @@ atualizarLista();
 }
 // atualiza a lista de amigos
 function atualizarLista() {
-let lista = document.getElementById("lista");
+// errei let lista = document.getElementById("lista");
+let lista = document.getElementById("listaAmigos"); // correto
 lista.innerHTML = "";
 // cria um elemento li para cada amigo
 for (let i = 0; i < amigos.length; i++) {
-let lista = document.createElement("li"); // pagina doc https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
-li.textContent = amigos[i];
-lista.appendChild(li);
+    for (let i = 0; i < amigos.length; i++) {
+        let li = document.createElement("li"); // codigo atualizado, acho que agora vai
+        li.textContent = amigos[i];
+        lista.appendChild(li); // adiciona o elemento li à lista
 }
 }
 
