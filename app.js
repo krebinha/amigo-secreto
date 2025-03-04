@@ -5,4 +5,8 @@ let amigos = [];
 function adicionarAmigo() { 
 let input = document.getElementById("amigo");
 let  nome = input.value.trim();
+// adiconar um alert
+if (nome === "") {
+    alert("Por favor, insira um nome de amigo");
+    return;
 }
