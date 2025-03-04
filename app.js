@@ -27,4 +27,9 @@ lista.appendChild(li);
 }
 }
 
+//gerar sorteio vamos la
+function sortearAmigo() {
+let amigoAleatorio = amigos[Math.floor(Math.random() * amigos.length)];
+let amigoSorteado = amigos[amigoAleatorio];
+let resultado = document.getElementById("resultado");
 
