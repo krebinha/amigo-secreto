@@ -2,11 +2,16 @@
 let amigos = [];
 //acho que errei - let validar = document.querySelector('input').value;
 // acho que essa é a corrreta 
-function adicionarAmigo() { 
-let input = document.getElementById("amigo");
-let  nome = input.value.trim();
-// adiconar um alert
+function adicionarAmigo() {
+let input = document.getElementById("amigo");    
+let nome = input.value.trim();
 if (nome === "") {
-    alert("Por favor, insira um nome de amigo");
-    return;
+    alert("Por Favor, insira um nome válido");
+    return; 
 }
+
+amigos.push(nome);
+input.value = "";
+atualizarLista();
+}
+
